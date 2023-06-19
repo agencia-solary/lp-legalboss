@@ -135,6 +135,12 @@ img {
   filter: blur(298.5px);
 }
 
+.card {
+  border-radius: 16px;
+  background: #131221;
+  padding: 40px;
+}
+
 .h1 {
   font-weight: 300;
   font-family: "Poppins", sans-serif;
@@ -307,4 +313,8 @@ a {
   width: 60%;
   text-align: center;
   margin-bottom: 40px;
+}
+
+.diferencial {
+  z-index: 10;
 }

@@ -9,11 +9,7 @@ html {
 
 // COLORS
 $white: #fff;
-$blue-normal: #095092;
-$blue-dark: #0030db;
 $black: #000;
-$grey-dark: #222;
-$grey-normal: #3d3d3d;
 
 // RESPONSIVE
 $container-xl: 1240px;
@@ -138,4 +134,9 @@ img {
 .blur {
   background: #0019FF;
   filter: blur(298.5px);
+}
+.card {
+  border-radius: 16px;
+  background: #131221;
+  padding: 40px;
 }
