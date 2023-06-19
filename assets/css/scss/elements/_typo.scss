@@ -134,9 +134,7 @@ p {
 }
 
 a {
-  color: inherit !important;
-  font-weight: unset !important;
-  background: unset !important;
+  color: inherit;
   @include typeface-1(a1, desktop);
   @include responsive(s) {
     @include typeface-1(a1, mobile);
@@ -149,5 +147,10 @@ a {
   line-height: 120% !important;
   font-weight: 700;
   text-decoration: none;
+  display: inline-block;
+}
+.btn-pri {
+  border: 2px solid $white;
+  padding: .5rem 3rem;
 }
 
