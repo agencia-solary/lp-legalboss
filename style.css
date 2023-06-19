@@ -227,3 +227,7 @@ a {
   font-weight: 700;
   text-decoration: none;
 }
+
+#hero {
+  background: radial-gradient(97.52% 97.52% at 83.07% 30.93%, #084074 0%, rgba(8, 64, 116, 0) 100%), #000000;
+}
