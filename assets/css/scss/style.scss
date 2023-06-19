@@ -1,8 +1,9 @@
 // BASE
 @import "./base";
-@import "./elements/typo";
-@import "./elements/header";
-@import "./elements/footer";
+@import "./elements/base/typo";
+@import "./elements/base/header";
+@import "./elements/base/footer";
 
 // SECTIONS
-@import "./elements/hero";
+@import "./elements/secoes/hero";
+@import "./elements/secoes/diferencial";
