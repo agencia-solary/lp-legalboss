@@ -1,3 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+// COLORS
+$white: #fff;
+$blue-normal: #095092;
+$blue-dark: #0030db;
+$black: #000;
+$grey-dark: #222;
+$grey-normal: #3d3d3d;
+
+// RESPONSIVE
+$container-xl: 1240px;
+$container-l: 1100px;
+$container-m: 960px;
+$container-s: 540px;
+
 body {
-  background-color: tomato;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  color: inherit;
+  font-size: 1.125rem;
+  line-height: 130%;
+}
+
+// Responsividade
+@mixin responsive($device) {
+  @if $device == xl {
+    // For resolutions upper than 1240px
+    @media screen and (min-width: $container-xl) {
+      @content;
+    }
+  } @else if $device == l {
+    // For resolutions between 1140px and 1440px
+    @media screen and (max-width: $container-xl) and (min-width: $container-l) {
+      @content;
+    }
+  } @else if $device == m {
+    // For resolutions beetwen 960px and 1140px
+    @media screen and (max-width: $container-l) and (min-width: $container-m) {
+      @content;
+    }
+  } @else if $device == s {
+    // For resolutions less than 960px
+    @media screen and (max-width: $container-m) {
+      @content;
+    }
+  } @else if $device == xs {
+    // For resolutions less than 540px
+    @media screen and (max-width: $container-s) {
+      @content;
+    }
+  } @else {
+    @media screen and (max-width: $device) {
+      @content;
+    }
+  }
+}
+.container {
+  max-width: $container-xl;
+  margin: 0 auto;
+  padding: 0px 20px;
+  border: 2px solid red;
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+// GRIDS
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 40px;
+  @include responsive(s) {
+    grid-template-columns: 1fr;
+  }
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  @include responsive(s) {
+    grid-template-columns: 1fr;
+  }
+}
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  @include responsive(s) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+.ul {
+  list-style: none;
+}
+.secao {
+  padding: 240px 40px 0 40px;
+  @include responsive(s) {
+    padding: 120px 20px 0 20px;
+  }
+}
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.border {
+  border-radius: 8px;
+}
+.shadow {
+  transition: 0.4s;
+  &:hover {
+    box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.08);
+  }
 }
