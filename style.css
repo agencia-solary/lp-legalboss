@@ -228,6 +228,28 @@ a {
   text-decoration: none;
 }
 
+#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px;
+  height: 100px;
+  background: rgba(1, 7, 12, 0.7);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  position: absolute;
+  margin: 0 auto;
+}
+#header img {
+  max-height: 50px;
+}
+
 #hero {
   background: radial-gradient(97.52% 97.52% at 83.07% 30.93%, #084074 0%, rgba(8, 64, 116, 0) 100%), #000000;
 }
