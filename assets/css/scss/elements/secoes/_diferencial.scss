@@ -1,3 +1,12 @@
 .diferencial{
   z-index: 10;
 }
+.diferencial-txt {
+  gap: 20px;
+  h3{
+    font-weight: 500;
+  }
+  p{
+    color: $grey;
+  }
+}
