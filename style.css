@@ -155,9 +155,9 @@ img {
 }
 
 .h2 {
-  font-weight: 400;
+  font-weight: 300;
   font-family: "Poppins", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 140%;
 }
 @media screen and (max-width: 960px) {
@@ -266,8 +266,8 @@ a {
 
 #header {
   width: 100%;
-  height: 100px;
-  padding: 20px;
+  height: 70px;
+  padding: 10px;
   background: rgba(1, 7, 12, 0.7);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
@@ -312,6 +312,7 @@ a {
 
 .hero-img img {
   margin-bottom: -250px;
+  max-width: 80%;
 }
 
 .hero-mouse {
@@ -325,11 +326,41 @@ a {
   transform: translateX(-50%);
 }
 .hero-mouse h2 {
-  width: 60%;
+  width: 70%;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+.hero-mouse img {
+  -webkit-animation: abc 1s infinite;
+  animation: abc 1s infinite;
+}
+@media screen and (max-width: 1100px) and (min-width: 960px) {
+  .hero-mouse {
+    display: none;
+  }
 }
 
+@-webkit-keyframes abc {
+  0% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
+@keyframes abc {
+  0% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
 #diferencial-na-advocacia {
   background: url(./assets/img/icons/blur.svg);
   background-size: cover;
