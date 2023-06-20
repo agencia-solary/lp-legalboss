@@ -151,8 +151,6 @@ img {
 @media screen and (max-width: 960px) {
   .h1 {
     font-family: "Poppins", sans-serif;
-    font-size: 2rem;
-    line-height: 120%;
   }
 }
 
@@ -165,8 +163,6 @@ img {
 @media screen and (max-width: 960px) {
   .h2 {
     font-family: "Poppins", sans-serif;
-    font-size: 2.5rem;
-    line-height: 3.75rem;
   }
 }
 
@@ -179,22 +175,18 @@ img {
 @media screen and (max-width: 960px) {
   .h3 {
     font-family: "Poppins", sans-serif;
-    font-size: 24px;
-    line-height: 120%;
   }
 }
 
 .h4 {
   font-weight: 500;
   font-family: "Poppins", sans-serif;
-  font-size: 1.125rem !important;
-  line-height: 120%;
+  font-size: 2rem !important;
+  line-height: 130%;
 }
 @media screen and (max-width: 960px) {
   .h4 {
     font-family: "Poppins", sans-serif;
-    font-size: 22px;
-    line-height: 120%;
   }
 }
 
@@ -208,8 +200,6 @@ img {
 @media screen and (max-width: 960px) {
   .h5 {
     font-family: "Poppins", sans-serif;
-    font-size: 1rem;
-    line-height: 120%;
   }
 }
 
@@ -252,6 +242,13 @@ a {
 .btn-pri {
   border: 2px solid #fff;
   padding: 0.5rem 3rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn-pri:hover {
+  opacity: 0.6;
+  -webkit-transform: scale(1.025);
+  transform: scale(1.025);
 }
 
 #header {
@@ -349,4 +346,24 @@ a {
 .vantagens img {
   max-height: 40px;
   margin-bottom: 20px;
+}
+
+#motivos h4 {
+  margin-bottom: 20px;
+}
+#motivos p {
+  color: #E7E7E7;
+  line-height: 160%;
+}
+#motivos .motivos-lista {
+  margin-top: 80px;
+}
+#motivos .motivos-lista ul {
+  padding-left: 40px;
+}
+#motivos .motivos-lista li {
+  margin-bottom: 10px;
+}
+#motivos .btn {
+  grid-column: span 2;
 }

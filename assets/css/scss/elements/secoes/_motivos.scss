@@ -1,0 +1,21 @@
+#motivos {
+  h4{
+    margin-bottom: 20px;
+  }
+  p{
+    color: #E7E7E7;
+    line-height: 160%;
+  }
+  .motivos-lista{
+    margin-top: 80px;
+    ul{
+      padding-left: 40px;
+    }
+    li{
+      margin-bottom: 10px;
+    }
+  }
+  .btn {
+    grid-column: span 2;
+  }
+}

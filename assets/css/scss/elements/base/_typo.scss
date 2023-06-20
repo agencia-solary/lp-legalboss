@@ -7,8 +7,8 @@
     font-size: 3rem;
     line-height: 120%;
   } @else if $size == h1 and $device == mobile {
-    font-size: 2rem;
-    line-height: 120%;
+    // font-size: 2rem;
+    // line-height: 120%;
   }
 
   // H2
@@ -16,8 +16,8 @@
     font-size: 1.5rem;
     line-height: 140%;
   } @else if $size == h2 and $device == mobile {
-    font-size: 2.5rem;
-    line-height: 3.75rem;
+    // font-size: 2.5rem;
+    // line-height: 3.75rem;
   }
 
   // H3
@@ -25,17 +25,17 @@
     font-size: 1.5rem;
     line-height: 2rem;
   } @else if $size == h3 and $device == mobile {
-    font-size: 24px;
-    line-height: 120%;
+    // font-size: 24px;
+    // line-height: 120%;
   }
 
   // H4
   @else if $size == h4 and $device == desktop {
-    font-size: 1.125rem !important;
-    line-height: 120%;
+    font-size: 2rem !important;
+    line-height: 130%;
   } @else if $size == h4 and $device == mobile {
-    font-size: 22px;
-    line-height: 120%;
+    // font-size: 22px;
+    // line-height: 120%;
   }
 
   // H5
@@ -43,18 +43,9 @@
     font-size: 1.25rem !important;
     line-height: 120%;
   } @else if $size == h5 and $device == mobile {
-    font-size: 1rem;
-    line-height: 120%;
+    // font-size: 1rem;
+    // line-height: 120%;
   }
-
-  // // H6
-  // @else if $size == h6 and $device == desktop {
-  //   font-size: 1.625rem !important;
-  //   line-height: 120%;
-  // } @else if $size == h6 and $device == mobile {
-  //   font-size: 1.25rem !important;
-  //   line-height: 120%;
-  // }
 
   // p
   @else if $size == p and $device == desktop {
@@ -116,15 +107,6 @@
   }
 }
 
-// .h6 {
-//   font-weight: 500;
-//   color: $black;
-//   @include typeface-1(h6, desktop);
-//   @include responsive(s) {
-//     @include typeface-1(h6, mobile);
-//   }
-// }
-
 p {
   font-weight: 300;
   @include typeface-1(p, desktop);
@@ -152,5 +134,10 @@ a {
 .btn-pri {
   border: 2px solid $white;
   padding: .5rem 3rem;
+  transition: .3s;
+  &:hover{
+    opacity: .6;
+    transform: scale(1.025);
+  }
 }
 
