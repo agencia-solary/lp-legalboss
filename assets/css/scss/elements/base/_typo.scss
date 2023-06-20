@@ -40,7 +40,7 @@
 
   // H5
   @else if $size == h5 and $device == desktop {
-    font-size: 1.25rem !important;
+    font-size: 5rem !important;
     line-height: 120%;
   } @else if $size == h5 and $device == mobile {
     // font-size: 1rem;
@@ -100,7 +100,6 @@
 
 .h5 {
   font-weight: 300;
-  color: #7d7d7d;
   @include typeface-1(h5, desktop);
   @include responsive(s) {
     @include typeface-1(h5, mobile);
@@ -134,6 +133,17 @@ a {
 .btn-pri {
   border: 2px solid $white;
   padding: .5rem 3rem;
+  transition: .3s;
+  &:hover{
+    opacity: .6;
+    transform: scale(1.025);
+  }
+}
+
+.btn-sec {
+  padding: 1rem 3rem;
+  background: #001AFF;
+  backdrop-filter: blur(6px);
   transition: .3s;
   &:hover{
     opacity: .6;
