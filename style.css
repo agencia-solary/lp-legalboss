@@ -357,6 +357,11 @@ a {
   margin-bottom: 20px;
 }
 
+.bg-motivos {
+  background: url(./assets/img/icons/blur.svg);
+  background-position: left 500px top -100px;
+}
+
 #motivos h4 {
   margin-bottom: 20px;
 }
@@ -375,4 +380,5 @@ a {
 }
 #motivos .btn {
   grid-column: span 2;
+  margin-top: 40px;
 }
