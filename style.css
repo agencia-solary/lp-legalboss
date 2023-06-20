@@ -13,7 +13,7 @@ body {
   width: 100%;
   font-family: "Poppins", sans-serif;
   color: #fff;
-  background: #000;
+  background: #01070C;
   font-size: 1.125rem;
   line-height: 130%;
 }
@@ -258,8 +258,9 @@ a {
   background: rgba(1, 7, 12, 0.7);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
-  position: absolute;
   margin: 0 auto;
+  position: fixed;
+  z-index: 1000;
 }
 #header img {
   max-height: 50px;
@@ -281,6 +282,8 @@ a {
   height: 100vh;
   background: url(./assets/img/icons/simbolo-legalboss.svg) no-repeat top -200px right 0px/900px, radial-gradient(97.52% 97.52% at 83.07% 30.93%, #084074 0%, rgba(8, 64, 116, 0) 100%);
   overflow: hidden;
+  position: relative;
+  z-index: 100;
 }
 
 .hero-container {
@@ -312,6 +315,12 @@ a {
   width: 60%;
   text-align: center;
   margin-bottom: 40px;
+}
+
+#diferencial-na-advocacia {
+  background: url(./assets/img/icons/blur.svg);
+  background-size: cover;
+  background-position: bottom;
 }
 
 .diferencial {

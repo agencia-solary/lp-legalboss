@@ -2,13 +2,17 @@
   height: 100vh;
   background: url(./assets/img/icons/simbolo-legalboss.svg) no-repeat top -200px right 0px / 900px, radial-gradient(97.52% 97.52% at 83.07% 30.93%, #084074 0%, rgba(8, 64, 116, 0) 100%);
   overflow: hidden;
+  position: relative;
+  z-index: 100;
 }
 .hero-container{
   height: 100vh;
   display: flex;
 }
 .hero-txt{
-  h1{margin-bottom: 20px;}
+  h1{
+    margin-bottom: 20px;
+  }
 }
 .hero-img {
   img {
