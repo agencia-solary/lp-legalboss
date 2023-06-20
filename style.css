@@ -156,6 +156,8 @@ img {
 @media screen and (max-width: 960px) {
   .h1 {
     font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    line-height: 120%;
   }
 }
 
@@ -168,6 +170,8 @@ img {
 @media screen and (max-width: 960px) {
   .h2 {
     font-family: "Poppins", sans-serif;
+    font-size: 1.25rem;
+    line-height: 140%;
   }
 }
 
@@ -180,6 +184,8 @@ img {
 @media screen and (max-width: 960px) {
   .h3 {
     font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -192,6 +198,8 @@ img {
 @media screen and (max-width: 960px) {
   .h4 {
     font-family: "Poppins", sans-serif;
+    font-size: 2rem !important;
+    line-height: 130%;
   }
 }
 
@@ -204,6 +212,8 @@ img {
 @media screen and (max-width: 960px) {
   .h5 {
     font-family: "Poppins", sans-serif;
+    font-size: 4rem !important;
+    line-height: 120%;
   }
 }
 
@@ -284,6 +294,11 @@ a {
   max-height: 50px;
 }
 @media screen and (max-width: 960px) {
+  #header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   #header .header-cta {
     display: none;
   }
@@ -310,6 +325,7 @@ footer {
   justify-content: center;
   font-size: 0.875rem;
   padding: 40px 20px 20px 20px !important;
+  text-align: center;
 }
 
 #hero {
@@ -327,7 +343,7 @@ footer {
 @media screen and (max-width: 960px) {
   #hero {
     height: auto;
-    background: url(./assets/img/icons/simbolo-legalboss.svg) no-repeat top -200px right -300px/900px, radial-gradient(97.52% 97.52% at 83.07% 30.93%, #084074 0%, rgba(8, 64, 116, 0) 100%);
+    background: url(./assets/img/icons/simbolo-legalboss.svg) no-repeat top -100px right -400px/700px, radial-gradient(97.52% 97.52% at 83.07% 30.93%, #084074 0%, rgba(8, 64, 116, 0) 100%);
   }
   #hero .hero-container {
     height: auto;
@@ -342,6 +358,10 @@ footer {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+  #hero .hero-container .hero-img img {
+    margin-bottom: 0px !important;
+    max-width: 100% !important;
   }
   #hero .hero-mouse h2 {
     width: 100%;
