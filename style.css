@@ -315,12 +315,39 @@ footer {
   position: relative;
   z-index: 100;
 }
+@media screen and (max-width: 1100px) and (min-width: 960px) {
+  #hero {
+    background: url(./assets/img/icons/simbolo-legalboss.svg) no-repeat top -200px right -300px/900px, radial-gradient(97.52% 97.52% at 83.07% 30.93%, #084074 0%, rgba(8, 64, 116, 0) 100%);
+  }
+}
+@media screen and (max-width: 960px) {
+  #hero {
+    height: auto;
+    background: url(./assets/img/icons/simbolo-legalboss.svg) no-repeat top -200px right -300px/900px, radial-gradient(97.52% 97.52% at 83.07% 30.93%, #084074 0%, rgba(8, 64, 116, 0) 100%);
+  }
+}
 
 .hero-container {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 960px) {
+  .hero-container {
+    height: auto;
+  }
+  .hero-container .hero-txt {
+    margin-top: 200px;
+  }
+  .hero-container .hero-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
 }
 
 .hero-txt h1 {
