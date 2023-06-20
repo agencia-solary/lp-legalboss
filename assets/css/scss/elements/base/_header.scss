@@ -10,6 +10,11 @@
   img {
     max-height: 50px;
   }
+  @include responsive(s){
+    .header-cta {
+      display: none;
+    }
+  }
 }
 .header{
   display: flex;

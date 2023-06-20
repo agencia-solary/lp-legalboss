@@ -7,6 +7,18 @@
   .btn {
     margin: 0 auto;
   }
+  @include responsive(s) {
+    .aula-info {
+      div{
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+    }
+    .card-principal {
+      ul{
+        padding-left: 20px;
+      }
+      }  }
 }
 .aula-info {
   div {
