@@ -330,3 +330,23 @@ a {
 .diferencial-txt p {
   color: #ccc;
 }
+
+.vantagens-tit {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.vantagens ul {
+  margin: 120px 0 80px 0;
+}
+.vantagens ul p {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.vantagens ul li:last-child p {
+  font-weight: 300;
+}
+.vantagens img {
+  max-height: 40px;
+  margin-bottom: 20px;
+}
