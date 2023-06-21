@@ -430,12 +430,6 @@ footer {
     transform: translateY(0px);
   }
 }
-#diferencial-na-advocacia {
-  background: url(./assets/img/icons/blur.svg);
-  background-size: cover;
-  background-position: bottom;
-}
-
 .diferencial {
   z-index: 10;
 }
@@ -553,6 +547,12 @@ footer {
 }
 .card-principal ul {
   padding-left: 40px;
+}
+
+.bg-formulario {
+  background: url(./assets/img/icons/blur.svg);
+  background-size: inherit;
+  background-position: bottom;
 }
 
 .formulario-txt h3 {
