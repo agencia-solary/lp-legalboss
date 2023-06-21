@@ -328,6 +328,43 @@ footer {
   text-align: center;
 }
 
+.ty-page {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #020f24;
+}
+.ty-page h1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.ty-page p {
+  font-size: 1.25rem;
+}
+.ty-page .btn {
+  padding: 1rem 3rem;
+  margin: 40px 0;
+  font-size: 1.5rem !important;
+}
+.ty-page .txt-span {
+  font-size: 1rem;
+  font-weight: 300;
+  padding-top: 80px;
+  color: #aaa;
+}
+
 #hero {
   height: 100vh;
   background: url(./assets/img/icons/simbolo-legalboss.svg) no-repeat top -200px right 0px/900px, radial-gradient(97.52% 97.52% at 83.07% 30.93%, #084074 0%, rgba(8, 64, 116, 0) 100%);
